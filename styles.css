@@ -1,0 +1,179 @@
+body,
+html {
+    background-color: #F3F0EC;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa';
+}
+
+.section {
+    width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* Allow wrapping so that on smaller screens the image can drop below the text */
+    align-items: flex-start;
+    /* Adjusted from center to start */
+    /* justify-content: flex-start; */
+    padding-left: 20px;
+    padding-top: 240px;
+    margin-top: -240px;
+    padding-bottom: 30px;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.2s;
+    padding-left: 0;
+    /* Remove padding-left to ensure alignment */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    text-decoration: none;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.logo {
+    height: 150px;
+    transition: height 0.3s ease;
+}
+
+/* Color of the sticky menu */
+.navbar {
+    background-color: #F3F0EC;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-bottom: 1px solid #e3dfdf;
+}
+
+.navbar a[href='#overmij'] {
+    white-space: nowrap;
+    /* prevent wrapping onto next line */
+    min-width: 80px;
+    /* adjust this value if needed */
+}
+
+.navbar a.active {
+    color: #94cfb5 !important;
+}
+
+.container-fluid.d-flex.flex-column.align-items-center {
+    background-color: #F3F0EC !important;
+}
+
+.section-header {
+    font-size: 25px;
+    color: #94cfb5;
+    margin-bottom: 10px;
+    /* Add some spacing between header and text */
+}
+
+.section-text {
+    font-size: 18px;
+    color: black;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.voordelen-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: disc;
+    padding: 0;
+}
+
+.voordelen-list li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* Assuming you had 10px before, this will make it 20px */
+    width: calc((100% / 3) - 20px);
+    /* Adjusts the width to account for the added horizontal margin */
+}
+
+.card {
+    background-color: #F3F0EC !important;
+    border: none !important;
+}
+
+
+.outward-image-right {
+    margin-left: 100px;
+    /* Sticks out 50px to the right */
+    width: calc(100% + 100px);
+    /* Expands the image to fill the extra space */
+}
+
+.outward-image-left {
+    margin-left: -100px;
+    /* Sticks out 50px to the right */
+    width: calc(100% + 100px);
+    /* Expands the image to fill the extra space */
+}
+
+.form-control {
+    background-color: #fdfaf4 !important;
+    padding: 0.8rem 0.75rem !important;
+    border: 1px solid #ededed !important;
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 75% !important;
+    }
+
+    .img-fluid {
+        max-width: 70%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+
+    .img-small {
+        max-width: 30%;
+    }
+
+    .voordelen-list li {
+        width: 100%;
+        /* List items take the full width */
+    }
+
+    .voordelen-list {
+        flex-direction: column;
+        /* Add bullet points back */
+        padding-left: 20px;
+        /* Adjust padding to align bullet points */
+    }
+
+    .logo {
+        height: 50px;
+
+    }
+
+    button.navbar-toggler {
+        position: absolute !important;
+        left: 20px !important;
+        top: 20px !important;
+    }
+
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 580px) {
+    .container {
+        max-width: 95% !important;
+    }
+
+    .jumbotron.jumbotron-fluid {
+        font-size: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
